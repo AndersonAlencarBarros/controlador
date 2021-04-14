@@ -1,3 +1,7 @@
+% Ir em Apps -> Linear System -> File -> Import
+% e importar as equações de malha fechada
+% Para visualizar a diferença entre as funções
+
 s = tf('s');
 
 ft_atuador = 0.1/(0.5*s + 2);
@@ -22,5 +26,3 @@ ft_malha_fechada_K5 = feedback(ft_malha_aberta_K5, 1);
 %step(ft_malha_fechada_K5);
 %rlocus(ft_malha_aberta_K5);
 
-% Ir em Apps -> Linear System -> File -> Import
-% e importar as equações de malha fechada

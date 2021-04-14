@@ -1,9 +1,7 @@
-%%% Controlador PI
-
 % Com esses dados podemos ter 
-% o lugar das raízes desejados
+% os polos de Malha Fechada desejados
 % de acordo com as especificações
-% s1,2 = alfa +- jWd
+% s(1,2) = alfa +- jWd
 
 % Tempo de Estabelecimento e Alfa
 te=3.2; % Entrada do Tempo desejada
