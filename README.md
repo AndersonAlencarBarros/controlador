@@ -1,7 +1,7 @@
 
 # Projeto de um controlador PI e PID
 
-- [ ] Estabelecer os polos de malha fechada desejados de acordo com os requisitos: sobressinal de 5% e tempo de estabelecimento de 0,1s
+- [x] Estabelecer os polos de malha fechada desejados de acordo com os requisitos: sobressinal de 5% e tempo de estabelecimento de 0,1s
 - [ ] Colocar apenas o polo rastreador, e faça uma avaliação das condições
 de estabilidade do sistema
 - [ ] Apresentar o lugar das raízes da planta e justifique as escolhas do(s) polo(s)
