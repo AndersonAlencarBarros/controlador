@@ -3,11 +3,12 @@
 % de acordo com as especificações
 % s(1,2) = alfa +- jWd
 
-% Tempo de Estabelecimento e Alfa
-te=0.1; % Entrada do Tempo desejada
+% Tempo de Estabelecimento e Alfa pelo critério
+% dos 2%
+te=0.2; % Entrada do Tempo desejada
 alfa=4/te;
 
-% Amortecimento E
+% Amortecimento ep
 Mp=5; % Entrada de Sobressinal desejada
 ep=sqrt(((log(Mp/100))^2)/(pi^2+(log(Mp/100))^2));
 

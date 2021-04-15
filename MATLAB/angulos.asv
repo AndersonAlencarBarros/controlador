@@ -1,8 +1,0 @@
-arctg = atand(41.9476/40);
-theta1 = 180 - arctg;
-
-arctg = atand(41.9476/(40 - 22));
-theta2 = 180 - arctg;
-
-arctg = atand(41.9476/(40 - 22));
-theta2 = 180 - arctg;

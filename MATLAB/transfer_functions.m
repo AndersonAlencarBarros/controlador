@@ -15,7 +15,7 @@ ft_malha_aberta_K1 = ft_sistema * ft_controlador_K1;
 ft_malha_fechada_K1 = feedback(ft_malha_aberta_K1, 1);
 
 %step(ft_malha_fechada_K1);
-%rlocus(ft_malha_aberta);
+rlocus(ft_malha_aberta_K1);
 
 %%% Controlador para K = 5
 ft_controlador_K5 = 5/s;
