@@ -5,7 +5,7 @@
 
 % Tempo de Estabelecimento e Alfa pelo critério
 % dos 2%
-te=0.2; % Entrada do Tempo desejada
+te=0.25; % Entrada do Tempo desejada
 alfa=4/te;
 
 % Amortecimento ep
@@ -15,7 +15,7 @@ ep=sqrt(((log(Mp/100))^2)/(pi^2+(log(Mp/100))^2));
 % Frequência Natural
 Wn=alfa/ep;
 
-% Wd
+% Frequência Wd
 Wd=Wn*sqrt(1-(ep^2));
 
 % s(1,2) = alfa +- jWd
