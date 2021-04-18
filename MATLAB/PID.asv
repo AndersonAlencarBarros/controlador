@@ -1,4 +1,4 @@
-z2 = 48.6; 
+z2 = 48.6;
 z1 = 24.2;
 
 % Calculo dos ângulos dos Polos
@@ -26,7 +26,7 @@ Gp = 98/((s + 22)* (s + 54));
 
 % Função do controlador PID
 % os zeros z1 e z2 são pelo critério dos 10%
-Gc = (Kc * (s + z1)*(s + z2))/(s*(s + 87));
+Gc = (Kc * (s + z1)*(s + z2))/(s*(s - p));
 
 % Malha aberta e Malha fechada
 malha_aberta_1 = Gc * Gp;
