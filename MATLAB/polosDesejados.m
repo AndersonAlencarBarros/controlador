@@ -5,7 +5,7 @@
 
 % Tempo de Estabelecimento e Alfa pelo critério
 % dos 2%
-te=0.1; % Entrada do Tempo desejada
+te=0.25; % Entrada do Tempo desejada t=0.25
 alfa=4/te;
 
 % Amortecimento ep

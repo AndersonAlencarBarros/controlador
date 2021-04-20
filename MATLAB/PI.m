@@ -10,6 +10,10 @@ z = (-Wd/tand(fi)) - alfa;
 % Ganho Kc
 Kc = abs((s1*(s1 + 22)*(s1 + 54))/(98*(s1 - z)));
 
+% Novo Kc
+%s3 = -25.9 + sqrt(-1)*26.22;
+%Kc_2 = abs((s3*(s3 + 22)*(s3 + 54))/(98*(s3 - z)));
+
 s = tf('s');
 
 % Função da Planta
@@ -24,7 +28,6 @@ malha_aberta_1 = Gc_1 * Gp;
 malha_fechada_1 = feedback(malha_aberta_1, 1);
 
 %step(malha_fechada_1);
-%rlocus(malha_fechada_1);
 %rlocus(malha_aberta_1);
 
 % Função do controlador PI
@@ -36,8 +39,7 @@ malha_aberta_2 = Gc_2 * Gp;
 malha_fechada_2 = feedback(malha_aberta_2, 1);
 
 %step(malha_fechada_2);
-%rlocus(malha_fechada_2)
-%rlocus(malha_aberta_2)
+rlocus(malha_aberta_2)
 
 
 

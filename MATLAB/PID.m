@@ -32,7 +32,7 @@ Gc = (Kc * (s + z1)*(s + z2))/(s*(s + 87));
 malha_aberta_1 = Gc * Gp;
 malha_fechada_1 = feedback(malha_aberta_1, 1);
 
-step(malha_fechada_1);
+%step(malha_fechada_1);
 %rlocus(malha_fechada_1);
 %rlocus(malha_aberta_1);
  
