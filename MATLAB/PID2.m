@@ -23,7 +23,7 @@ Kc = abs(e1/e2);
 s = tf('s');
 
 % Função da Planta
-Gp = 98/(s*(s + 22)* (s + 54));
+Gp = 98/((s + 22)* (s + 54));
 
 % Função do controlador PID
 % os zeros z1 e z2 são pelo critério dos 10%
