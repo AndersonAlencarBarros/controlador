@@ -17,14 +17,18 @@ Kc = abs((s1*(s1 + 22)*(s1 + 54))/(98*(s1 + 24.2)));
 
 % Função do controlador PI
 % com z pelo critério dos 10%
-Gc_2 = (Kc * (s + 24.2))/s;
+Gc_2 = (s + 24.2)/s;
 
 % Malha aberta e Malha fechada
-malha_aberta_2 = Gc_2 * Gp;
-malha_fechada_2 = feedback(malha_aberta_2, 1);
+malha_aberta = Gc_2 * Gp;
+malha_fechada_PI = (12 * Gc_2 * Gp)/(1 + (12 * Gc_2 * Gp));
 
-%step(malha_fechada_2);
-rlocus(malha_aberta_2);
- 
+%step(malha_fechada_PI);
+rlocus(malha_aberta);
+
 % Polos de Malha Fechada
-%pole(malha_fechada_2)
+%pole(malha_fechada_PI)
+
+%planta
+%planta com polo rastreador
+%Kc com criterio
