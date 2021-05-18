@@ -43,7 +43,7 @@ s = tf('s');
 Gc = ( Kc * (s + alfa * a )/( s + a ));
 
 % MARGEM DE GANHO DA PLANTA
-MG = 1
+MG = 1;
 
 %[theta, rho] = cart2pol(real(a), imag(a));
 %theta = theta * 180/pi; 
